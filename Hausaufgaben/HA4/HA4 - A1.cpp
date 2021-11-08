@@ -4,15 +4,15 @@
 
 #include <iostream>
 
-int A1() {
+int main() {
 	int ziffer = 0;
 
 	while (ziffer < 100) {
 		std::cout << "Bitte geben Sie eine Zahl (ueber 100) ein: ";
 		std::cin >> ziffer;
-		if (ziffer < 100) {
+		if (ziffer < 100) 
 			std::cout << "Fehler: Bitte eine Zahl ueber 100 eingeben!" << std::endl;
-		}
+		
 	}
 
 	int temp;
@@ -21,20 +21,20 @@ int A1() {
 	while (ziffer >= 10 && diff) {
 		temp = ziffer % 10;
 		ziffer /= 10;
-		if ((temp - ziffer % 10) == 0 || (temp - ziffer % 10) == 1) {
+		if ((temp - ziffer % 10) == 0 || (temp - ziffer % 10) == 1) 
 			continue;
-		}
-		else {
+		
+		else 
 			diff = false;
-		}
+		
 	}
 
-	if (diff) {
+	if (diff) 
 		std::cout << "Differenzpruefung bestanden!" << std::endl;
-	}
-	else {
+	
+	else 
 		std::cout << "Differenzpruefung nicht bestanden" << std::endl;
-	}
+	
 
 	return 0;
 }
