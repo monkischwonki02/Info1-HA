@@ -1,1 +1,1 @@
-# Info1-Hausaufgaben
+# Info1-Hausaufgaben und Übungen
