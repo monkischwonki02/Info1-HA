@@ -7,35 +7,31 @@ int main() {
 
 	int budget;
 	int woche = 1;
-	int gesamt = 70;
+	int gesamt = 20;
 	int preis = 50;
 	std::cout << "Welches Budget steht zur Verfuegung? ";
 	std::cin >> budget;
 
 	if (budget < gesamt) 
 		std::cout << "Sie haben zu wenig Budget um sich einen Lagerraum zu mieten." << std::endl;
+	else {
+		do{		
+			if (woche >= 4 && woche < 8) {
 
-	while (budget >= gesamt){
-		if (woche >= 4 && woche < 8) {
+				if (woche == 6)  
+					gesamt -= 100;
 
-			if (woche == 6)  
-				gesamt -= 100;
-			
-			std::cout << woche << ". Woche: \t" << "45.00 Euro \tGesamtpreis: \t" << gesamt << " Euro" << std::endl;
-			gesamt += preis * 0.9;
-		}
-		else if (woche >= 8) {
-			
-			std::cout << woche << ". Woche: \t" << "40.00 Euro \tGesamtpreis: \t" << gesamt << " Euro" << std::endl;
-			gesamt += preis * 0.8;
-		}
-		else {
-			std::cout << woche << ". Woche: \t" << "50.00 Euro \tGesamtpreis: \t" << gesamt << " Euro" << std::endl;
-			gesamt += 50;
-		}
-		woche++;
+				preis = 45;			
+			}
+			else if (woche >= 8) {
+				preis = 40;
+				
+			}
+			gesamt += preis;
+			std::cout << woche << ". Woche: \t" << preis << ".00 Euro \tGesamtpreis: \t" << gesamt << " Euro" << std::endl;
+			woche++;
+		} while((budget - gesamt) >= preis);
 	}
-
 	return 0;
 }
 
