@@ -4,6 +4,9 @@
 
 #include <iostream>
 
+// Anmerkung:
+// Differenzprüfung erfolgt von rechts nach links
+// Wenn diff != 0 wird der Betrag gebildet und es wird geguckt, ob der betrag 1 ist
 int main() {
 	int ziffer = 0;
 
@@ -21,7 +24,7 @@ int main() {
 	while (ziffer >= 10 && diff) {
 		temp = ziffer % 10;
 		ziffer /= 10;
-		if ((temp - ziffer % 10) == 0 || (temp - ziffer % 10) == 1) 
+		if ((temp - ziffer % 10) == 0 || abs(temp - ziffer % 10) == 1) 
 			continue;
 		
 		else 
