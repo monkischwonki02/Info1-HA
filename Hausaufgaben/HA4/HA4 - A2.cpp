@@ -8,7 +8,7 @@
 int main() {
 
 	int breite;
-	std::cout << "Bitte geben Sie die Breite der Pyramide an: ";
+	std::cout << "Bitte geben Sie die Höhe der Pyramide an: ";
 	std::cin >> breite;
 
 	for (int i = 0; i < breite; i++) {
