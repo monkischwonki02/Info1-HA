@@ -4,16 +4,15 @@
 
 #include <iostream>
 #include <cmath>
+
 int zaehleQuadrate(int a, int b){
     int i = 0;
     int count = 0;
     while (pow(++i, 2) <= b){
-        if (pow(i, 2) < a && a != 0){
+        if (pow(i, 2) < a){
             continue;
-        } else if (a == 0){
-            std::cout << "0 = 0 * 0" << std::endl; // Fall, wenn a = 0;
-            count++;
         }
+        
         std::cout << pow(i, 2) << " = " << i << " * " << i << std::endl;
         count++;
     }
@@ -23,15 +22,15 @@ int zaehleQuadrate(int a, int b){
 
 int main(){
 
-    int a,b;
+    int a,b,res;
 
     std::cout << "Untere Grenze a: ";
     std::cin >> a;
     std::cout << "Untere Grenze b: ";
     std::cin >> b;
 
-    int res = zaehleQuadrate(a,b);
-
-    std::cout << "\nDie Anzahl der Quadrate ist " << res << std::endl;
+    if (a >= 1 && b >= a) {
+        res = zaehleQuadrate(a,b);
+        std::cout << "\nDie Anzahl der Quadrate ist " << res << std::endl;
     return 0;
 }
