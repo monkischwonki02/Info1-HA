@@ -26,11 +26,15 @@ int main(){
 
     std::cout << "Untere Grenze a: ";
     std::cin >> a;
-    std::cout << "Untere Grenze b: ";
+    std::cout << "Obere Grenze b: ";
     std::cin >> b;
 
     if (a >= 1 && b >= a) {
         res = zaehleQuadrate(a,b);
         std::cout << "\nDie Anzahl der Quadrate ist " << res << std::endl;
+    }
+    else {
+        std::cout << "Fehler" << std::endl;
+    }
     return 0;
 }
