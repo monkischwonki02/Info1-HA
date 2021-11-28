@@ -1,5 +1,7 @@
+// Name: Adrian Hammermeister; Ailina Steg
+// Studiengang: Physik (Bachelor)
+// Matrikelnr.: 221200260; 221200827
 #include <iostream>
-#include <cmath>
 
 int verdoppeln(int* arr, int n) {
 	int total = 0;
