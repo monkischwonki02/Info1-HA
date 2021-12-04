@@ -41,11 +41,12 @@ void sortieren(int a, int b, int c) {
 
 
 int main() {
-	int a = -5;
-	int b = -1;
-	int c = -3;
+	int a, b, c;
 
-
+	std::cout << "Geben Sie 3 Zahlen ein: " << std::endl;
+	std::cout << "1. Zahl: "; std::cin >> a;
+	std::cout << "2. Zahl: "; std::cin >> b;
+	std::cout << "3. Zahl: "; std::cin >> c;
 
 	sortieren(a, b, c);
 	
