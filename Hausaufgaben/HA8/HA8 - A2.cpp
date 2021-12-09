@@ -1,9 +1,8 @@
-#include <iostream>
-#include <string>
 // Name: Adrian Hammermeister; Ailina Steg
 // Studiengang: Physik (Bachelor)
 // Matrikelnr.: 221200260; 221200827
-#include <vector>
+#include <iostream>
+#include <string>
 
 std::string reorder(const std::string& name){
     int lastInd = name.rfind(" ");
