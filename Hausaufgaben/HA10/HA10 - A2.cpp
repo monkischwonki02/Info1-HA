@@ -18,13 +18,13 @@ int main(){
     std::string in;
     std::cout << "Bitte geben Sie eine Binaerzahl ein: "; std::cin >> in;
     
-    int num[in.length] = {0};
+    int num[in.length()] = {0};
 
-    for (int i = 0; i < in.length; i++){
+    for (int i = 0; i < in.length(); i++){
         num[i] = (int) in[i];
     }
 
-    if (checkPalindrom(num, in.length)) std::cout << "Palindrom" << std::endl;
+    if (checkPalindrom(num, in.length())) std::cout << "Palindrom" << std::endl;
     else std::cout << "Kein Palindrom" << std::endl;
 
     return 0;

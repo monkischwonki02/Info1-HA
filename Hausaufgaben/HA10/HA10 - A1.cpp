@@ -7,9 +7,12 @@ int binaereAddition(int a[], int b[], int bits, int res[]){
     int uebertrag = 0;
     int temp = 0;
     for (int i = bits-1; i >= 0; i--){
-        temp = a[i] + b[i] + uebertrag
+        temp = a[i] + b[i] + uebertrag;
         res[i] = temp % 2;
-        if (temp >= 2) temp = 1;
+        if (temp >= 2) {
+            temp = 1;
+            uebertrag = 1;
+        }
         else temp = 0;
     }
     return uebertrag;
