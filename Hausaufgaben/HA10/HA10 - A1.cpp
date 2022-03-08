@@ -1,6 +1,3 @@
-// Name: Adrian Hammermeister; Ailina Steg
-// Studiengang: Physik (Bachelor)
-// Matrikelnr.: 221200260; 221200827
 #include <iostream>
 
 int binaereAddition(int a[], int b[], int bits, int res[]){
@@ -20,7 +17,7 @@ int binaereAddition(int a[], int b[], int bits, int res[]){
 
 int main(){
 
-    int bits = 6;
+    const int bits = 6;
     int a[] = {0,1,1,1,1,0};
     int b[] = {0,0,1,0,1,0};
     int res[bits] = {0};

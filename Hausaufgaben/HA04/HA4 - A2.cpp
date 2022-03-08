@@ -1,7 +1,3 @@
-//Name: Adrian Hammermeister; Ailina Steg
-// Studiengang: Physik (Bachelor)
-// Matrikelnummer: 221200260; 221200827
-
 #include <iostream>
 
 
